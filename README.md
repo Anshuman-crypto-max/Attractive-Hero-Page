@@ -1,36 +1,50 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Scroll-Driven Hero Animation
+
+## Overview
+This project recreates an interactive hero section inspired by high-end automotive landing pages, focusing heavily on scroll-driven animation and smooth, premium UI interactions. It is built to serve as a high-performance frontend assignment demonstrating modern web animation techniques.
+
+## Features
+- **Scroll-driven hero animation**: Core visual elements react seamlessly to user scrolling.
+- **GSAP ScrollTrigger**: Complex, hardware-accelerated scroll timelines.
+- **Smooth intro animations**: Staggered text reveals and fades on initial page load.
+- **Responsive design**: Flawless layout adaptation across desktop, tablet, and mobile.
+- **Animated statistics**: Premium glassmorphic metric cards.
+- **Premium UI**: Custom ambient lighting, noise textures, and clean typography.
+- **Mobile support**: Tailored scroll interactions for smaller touch devices to prevent clipping.
+
+## Tech Stack
+- **Next.js** (App Router)
+- **React**
+- **TypeScript**
+- **Tailwind CSS**
+- **GSAP**
+- **ScrollTrigger**
+
+## Animation
+The core experience relies on GSAP's `ScrollTrigger` and its `scrub` functionality. Instead of playing an animation automatically over time, `scrub: 1` binds the animation timeline directly to the user's scrollbar. As the user scrolls down, the main hero visual utilizes GPU-accelerated transforms (translating, scaling, and rotating) to move dynamically. On desktop breakpoints, the hero container is pinned to the viewport to create an immersive, full-screen interactive sequence.
 
 ## Getting Started
 
-First, run the development server:
+To run the development server locally:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Production Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+To build and serve the optimized production version:
 
-## Learn More
+```bash
+npm run build
+npm start
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Live Demo
+[Live Demo](https://chatgpt.com/c/YOUR_DEPLOYED_URL)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## GitHub
+[GitHub Repository](https://github.com/Anshuman-crypto-max/Attractive-Hero-Page.git)
